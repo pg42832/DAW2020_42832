@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Trabalho_Pratico_2_XML SYSTEM "Trabalho_Pratico_2_DTD.dtd">
+<corpo>
+    <Metadata KeyName = "AAAMM" >
+    <Title>Ah Ah Ah Minha Machadinha</Title>
+    <Subtitle>Quem te pôs a mão sabendo que és minha</Subtitle>
+    <Begin_Date>27/10/2020</Begin_Date>
+    <End_Date>27/10/2020</End_Date>
+    </Metadata>
+    
+    <Workteam>
+        <Member>
+            <Name>Guilherme Palumbo</Name>
+            <Number_ID>42832</Number_ID>
+            <Email>42832@uminho.pt</Email>
+        </Member>
+        <Member>
+            <Name>Guilherme Fraga Palumbo</Name>
+            <Number_ID>42832(1)</Number_ID>
+            <Email>42832(1)@uminho.pt</Email>
+        </Member> 
+    </Workteam>
+    
+    <Abstract>
+        <paragraph>Foi realizado um ficheiro DTD no programa Oxygen XML Editor, onde foram definidos os elementos necessários para a construção de um Project Records </paragraph>
+        <paragraph>Após a realização do DTD foi então desenvolvida uma página XML e validando a mesma de acordo com os parametros do DTD criado previamente</paragraph>
+        <paragraph>Dentro do DTD temos o Bloco de Metadados, uma Workteam com até 3 elementos, uma secção Abstract onde permite enunciar o trabalho realizado e por último uma secção de Deliverables</paragraph>
+    </Abstract>
+    
+    <Deliverables>
+        <exercice></exercice>
+    </Deliverables>    
+</corpo>

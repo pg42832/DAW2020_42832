@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT corpo (Metadata, Workteam, Abstract, Deliverables) >
+<!ELEMENT Metadata (Title, Subtitle?, Begin_Date, End_Date, Supervisor?) >
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Subtitle (#PCDATA)>
+<!ELEMENT Begin_Date (#PCDATA) >
+<!ELEMENT End_Date (#PCDATA) >
+<!ELEMENT Supervisor (xlink:href) >
+
+<!ELEMENT Workteam (Member)+ >
+<!ELEMENT Member (Name,Number_ID,Email,Linkweb?) >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT Number_ID (#PCDATA) >
+<!ELEMENT Email (#PCDATA) >
+<!ELEMENT Linkweb (xlink:href) >
+
+<!ELEMENT Abstract (paragraph)+ >
+<!ELEMENT paragraph (#PCDATA|xlink:href|bold|italic|underlined)* >
+
+<!ELEMENT Deliverables (exercice)+ >
+<!ELEMENT exercice (#PCDATA|xlink:href)* >
+
+<!ATTLIST Metadata
+          KeyName ID #REQUIRED >
