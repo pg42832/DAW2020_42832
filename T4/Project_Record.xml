@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/Utilizador/Desktop/DAW2020_42832/Project%20Record/Project%20Record.dtd">
+<pr>
+    <meta>
+        <key>Trabalhão Praticão 4</key>
+        <title>Server node.js</title>
+        <bdate>4-11-2020</bdate>
+        <edate>17-11-2020</edate>
+        <supervisor>José Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="42832">
+            <name>Guilherme Palumbo</name>
+            <email>pg42832@alunos.uminho.com</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Este trabalho teve como objetivo criar um server em node.js que nos apresentasse uma página especifica através de uma query.</p>
+        <p>As diferentes páginas eram geradas através de um ficheiro XSL.</p>
+        <p>O conteudo de cada página era os dados do dataset de arqueositios</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/pg42832/DAW2020_42832/tree/master/T4">Repositorio Git com o TP4</link>
+    </deliverables>
+</pr>
