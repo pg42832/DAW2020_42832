@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/Utilizador/Desktop/DAW2020_42832/Project%20Record/Project%20Record.dtd">
+<pr>
+    <meta>
+        <key>MSEM</key>
+        <title>Mega Serverzão da escolinha de Música</title>
+        <bdate>17-11-2020</bdate>
+        <edate>17-11-2020</edate>
+        <supervisor>José Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="42832">
+            <name>Guilherme Palumbo</name>
+            <email>pg42832@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Foi criado um server que permite a navegação e consulta da informação do dataset da escola de música. </p>
+        <p>Temos 3 camadas, uma página principal onde aparece as coleções disponiveis, uma segunda camada que aparece cada registo dessa coleção e por último uma página individual de cada registo dessa coleção.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/pg42832/DAW2020_42832/tree/master/T5">Repositorio TPC5</link>
+    </deliverables>
+</pr>
