@@ -81,9 +81,11 @@ http.createServer(function (req, res) {
 
 
 
-        if(req.url == "/alunos/A1510" )
+//__________________________________________________________
+
+        else if(req.url == "/alunos/" + {id} )
         {
-        axios.get("http://localhost:3000/alunos/A1510")
+        axios.get("http://localhost:3000/alunos/" + {id})
         .then(function (resp)
         {
             res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"})  
@@ -104,48 +106,50 @@ http.createServer(function (req, res) {
         })
         }
 
-        if(req.url == "/cursos/CS23" )
-        {
-        axios.get("http://localhost:3000/cursos/CS23")
-        .then(function (resp)
-        {
-            res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"})  
-            res.write("<h2>Curso:</h2>")
-            res.write("<ul>")
-            res.write("<li> ID: " + resp.data.id + "</li>")
-            res.write("<li> Designação: " + resp.data.designacao + "</li>")
-            res.write("<li> Duração: " + resp.data.duracao + "</li>")
-            res.write("<li> Instrumento: " + resp.data.instrumento + "</li>")
-            res.write("<li> ID do Instrumento: " + resp.data.instrumento.id + "</li>")
-            res.write("<li> Instrumento: " +resp.data. instrumento.text + "</li>")
-            res.write("</ul>")
-            res.write("<address>[ <a href='/cursos'> Voltar </a>]</address>")
-            
-        })
-        .catch (function (error) {
-            console.log("Erro na obtenção do Curso: " + error);
-        })
-        }
+//________________________________________________
 
-
-        if(req.url == "/instrumentos/I1" )
-        {
-        axios.get("http://localhost:3000/instrumentos/I1")
-        .then(function (resp)
-        {
-            res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"})  
-            res.write("<h2>Instrumento:</h2>")
-            res.write("<ul>")
-            res.write("<li> ID: " + resp.data.id + "</li>")
-            res.write("<li> Instrumento: " + resp.data.text + "</li>")
-            res.write("</ul>")
-            res.write("<address>[ <a href='/instrumentos'> Voltar </a>]</address>")
+        // if(req.url == "/cursos/CS23" )
+        // {
+        // axios.get("http://localhost:3000/cursos/CS23")
+        // .then(function (resp)
+        // {
+        //     res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"})  
+        //     res.write("<h2>Curso:</h2>")
+        //     res.write("<ul>")
+        //     res.write("<li> ID: " + resp.data.id + "</li>")
+        //     res.write("<li> Designação: " + resp.data.designacao + "</li>")
+        //     res.write("<li> Duração: " + resp.data.duracao + "</li>")
+        //     res.write("<li> Instrumento: " + resp.data.instrumento + "</li>")
+        //     res.write("<li> ID do Instrumento: " + resp.data.instrumento.id + "</li>")
+        //     res.write("<li> Instrumento: " +resp.data. instrumento.text + "</li>")
+        //     res.write("</ul>")
+        //     res.write("<address>[ <a href='/cursos'> Voltar </a>]</address>")
             
-        })
-        .catch (function (error) {
-            console.log("Erro na obtenção do Instrumento: " + error);
-        })
-        }
+        // })
+        // .catch (function (error) {
+        //     console.log("Erro na obtenção do Curso: " + error);
+        // })
+        // }
+
+//_____________________________________________________________
+        // if(req.url == "/instrumentos/I1" )
+        // {
+        // axios.get("http://localhost:3000/instrumentos/I1")
+        // .then(function (resp)
+        // {
+        //     res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"})  
+        //     res.write("<h2>Instrumento:</h2>")
+        //     res.write("<ul>")
+        //     res.write("<li> ID: " + resp.data.id + "</li>")
+        //     res.write("<li> Instrumento: " + resp.data.text + "</li>")
+        //     res.write("</ul>")
+        //     res.write("<address>[ <a href='/instrumentos'> Voltar </a>]</address>")
+            
+        // })
+        // .catch (function (error) {
+        //     console.log("Erro na obtenção do Instrumento: " + error);
+        // })
+        // }
 
 
         
