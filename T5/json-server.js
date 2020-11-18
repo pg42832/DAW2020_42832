@@ -27,7 +27,7 @@ http.createServer(function (req, res) {
                 res.write("<ul>")
                 alunos = resp.data;
                 alunos.forEach( a => {
-                        res.write("<Li><a href='/alunos/"+ a.id + "'>" + a.id + " - " + a.nome +"</a></li>")
+                        res.write("<Li><a href='http://localhost:3000/alunos/"+ a.id + "'>" + a.id + " - " + a.nome +"</a></li>")
                 }) 
                 res.write("</ul>")
                 res.write("<address>[ <a href='/'> Voltar </a>]</address>")
@@ -47,7 +47,7 @@ http.createServer(function (req, res) {
                 res.write("<ul>")
                 curso = resp.data;
                 curso.forEach( c => {
-                        res.write("<Li><a href='/cursos/"+ c.id + "'>" + c.id + " - " + c.designacao + "</a></li>")
+                        res.write("<Li><a href='http://localhost:3000/cursos/"+ c.id + "'>" + c.id + " - " + c.designacao + "</a></li>")
                 }) 
                 res.write("</ul>")
                 res.write("<address>[ <a href='/'> Voltar </a>]</address>")
@@ -67,7 +67,7 @@ http.createServer(function (req, res) {
                 res.write("<ul>")
                 instrumento = resp.data;
                 instrumento.forEach( inst => {
-                        res.write("<Li><a href='/instrumentos/"+ inst.id + "'>" + inst.id + " - " + inst.text + "</a></li>")
+                        res.write("<Li><a href='http://localhost:3000/instrumentos/"+ inst.id + "'>" + inst.id + " - " + inst.text + "</a></li>")
                         console.log(inst.id);
                 }) 
                 res.write("</ul>")
@@ -83,28 +83,28 @@ http.createServer(function (req, res) {
 
 //__________________________________________________________
 
-        else if(req.url == "/alunos/" + {id} )
-        {
-        axios.get("http://localhost:3000/alunos/" + {id})
-        .then(function (resp)
-        {
-            res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"})  
-            res.write("<h2>Aluno:</h2>")
-            res.write("<ul>")
-            res.write("<li> ID: " + resp.data.id + "</li>")
-            res.write("<li> Nome: " + resp.data.nome + "</li>")
-            res.write("<li> Data de Nascimento: " + resp.data.dataNasc + "</li>")
-            res.write("<li> Curso: " + resp.data.curso + "</li>")
-            res.write("<li> Ano do Curso: " + resp.data.anoCurso + "</li>")
-            res.write("<li> Instrumento: " + resp.data.instrumento + "</li>")
-            res.write("</ul>")
-            res.write("<address>[ <a href='/alunos'> Voltar </a>]</address>")
+        // else if(req.url == "/alunos/" + {id} )
+        // {
+        // axios.get("http://localhost:3000/alunos/" + {id})
+        // .then(function (resp)
+        // {
+        //     res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"})  
+        //     res.write("<h2>Aluno:</h2>")
+        //     res.write("<ul>")
+        //     res.write("<li> ID: " + resp.data.id + "</li>")
+        //     res.write("<li> Nome: " + resp.data.nome + "</li>")
+        //     res.write("<li> Data de Nascimento: " + resp.data.dataNasc + "</li>")
+        //     res.write("<li> Curso: " + resp.data.curso + "</li>")
+        //     res.write("<li> Ano do Curso: " + resp.data.anoCurso + "</li>")
+        //     res.write("<li> Instrumento: " + resp.data.instrumento + "</li>")
+        //     res.write("</ul>")
+        //     res.write("<address>[ <a href='/alunos'> Voltar </a>]</address>")
             
-        })
-        .catch (function (error) {
-            console.log("Erro na obtenção do Aluno: " + error);
-        })
-        }
+        // })
+        // .catch (function (error) {
+        //     console.log("Erro na obtenção do Aluno: " + error);
+        // })
+        // }
 
 //________________________________________________
 
