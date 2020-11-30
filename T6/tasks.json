@@ -1,0 +1,30 @@
+{
+  "tarefas": [
+    {
+      "id": "1",
+      "who": "John Cena",
+      "what": "fight Undertaker",
+      "type": "wrestling",
+      "dateCreated": "2020-11-27",
+      "dateDued": "2020-11-28"
+    },
+    {
+      "id": "2",
+      "who": "Undertaker",
+      "what": "fight John Cena (win)",
+      "type": "wrestling or teatre is the same thing",
+      "dateCreated": "2020-11-27",
+      "dateDued": "2020-11-28"
+    }
+  ],
+  "tarefasFeitas": [
+    {
+      "id": "3",
+      "who": "Cinderella",
+      "what": "Lose shoe",
+      "type": "recreative",
+      "dateCreated": "1400-05-20",
+      "dateDued": "1400-07-20"
+    }
+  ]
+}
