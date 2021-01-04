@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/Utilizador/Desktop/DAW2020_42832/Project%20Record/Project%20Record.dtd">
+<pr>
+    <meta>
+        <key>Trabalhão Praticão 8</key>
+        <title>Uploadzinho</title>
+        <bdate>31-11-2020</bdate>
+        <edate>06-12-2020</edate>
+        <supervisor>José Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="42832">
+            <name>Guilherme Palumbo</name>
+            <email>pg42832@alunos.uminho.com</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Este trabalho teve como objetivo desenvolver uma página que permitisse fazer upload de múltiplos ficheiros simultaneamente.</p>
+        <p>Eu tentei criar um button onde ao clicar chamava um script que gerava sempre duas novas divs de "Description" e "Ficheiro" mas não consegui fazer.</p>
+        <p>Também mudei o server4.js para que no post o upload fosse upload.array e não single, provavelmente devia mudar a variavel files e talvez introduzir um ciclo, porém 
+        não tentei essa ultima opção.  </p>
+        <p>Eu apaguei o meu script pq o formulário não gerava as novas divs que queria logo não conseguia introduzir mais ficheiros. Porém o programa permite introduzir
+        um ficheiro, visualiza-lo e fazer o download do mesmo.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/pg42832/DAW2020_42832/tree/master/T8">Repositorio Git com o T8</link>
+    </deliverables>
+</pr>
