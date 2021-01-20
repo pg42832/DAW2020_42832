@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/Utilizador/Desktop/DAW2020_42832/Project%20Record/Project%20Record.dtd">
+<pr>
+    <meta>
+        <key>DAW2020-Teste</key>
+        <title>DAW2020-Teste</title>
+        <bdate>20-01-2021</bdate>
+        <edate>20-01-2021</edate>
+        <supervisor>José Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="42832">
+            <name>Guilherme Palumbo</name>
+            <email>pg42832@alunos.uminho.com</email>
+        </member>
+    </team>
+    <abstract>
+        <p>No exercicio ex1 eu comecei por alterar a base de dados original mas decidi desistir e selecionar a base de dados batismos-fixed.json</p>
+        <p>Fiz as alterações no proprio json, criei novos atributos para ano, mae, pai, mudei os / para _ nas refs.</p>
+        <p>Depois passei a db para o Mongo fazendo um Mongoimport -d ex1 -c batismos --jsonArray batismos-fixed.json</p>
+        <p>depois da preparação dos dados realizei a instalação do express através do comando express –view=pug ex1,
+        instalei o npm, criei pasta para os controllers e para os models (criei js para cada uma das pastas), isntalei o mongoose,
+        criei no routes uma api.js e fiz os GETs. Fiz pequenas alterações no www do bin por causa do port.</p>
+        <p>Na parte do aquecimento eu usei o Postman, busquei a apikey pelo proprio site,
+        extrai um json com o que pedia e analisei o json. O ficheiro com as respostas está na pasta ex2 com o nome aquecimento.txt</p> 
+        <p>No exercicio 2 tive muitas dificudlades. Comecei por instalar o express novamente,
+        passei o w3.css para a pasta de stylesheets do public, instalei o npm. nas routes no index tentei fazer os gets</p>
+        <p>Os gets ficaram comentados a baixo, eu tentei fazer, comecei por acertar na pagina das classes, mas quando vi o exercicio nao pedia o que eu fiz.
+        Eu tinha feito as duas listas, classes e termos na mesma pagina index, mas depois vi q o enunciado n pedia isso.
+        Tentei alterar mas ja n consegui, tive muitas dificuldades.</p>
+        <p>ex1 encontra-se na port 5000 e o ex2 na port 5001</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/pg42832/DAW2020_42832/tree/master/DAW2020-Teste">Repositorio Git com o Teste</link>
+    </deliverables>
+</pr>

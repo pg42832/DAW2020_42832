@@ -1,0 +1,70 @@
+ extends layout
+
+//- block content
+//-   .w3-container
+//-     .w3-card-4
+//-       header.w3-container.w3-teal.w3-margin-top
+//-         h3 CLAV - Classificação e Avaliação da Informação Pública
+//-     .w3-card-4
+//-       header.w3-container.w3-teal.w3-margin-top
+//-         h4 Página Inicial
+//-       table.w3-table-all
+//-         tr
+//-           th Código
+//-           th Classes
+//-           th Id Classe
+//-           th Termos de índice
+//-         each tip in lista
+//-         each tip2 in lista2
+//-             tr
+//-                 td=tip.codigo
+//-                 td
+//-                   a(href="http://localhost:5001/classes" + tip.classes)=tip.titulo
+//-                 td=tip2.idClass
+//-                 td
+//-                   a(href="http://localhost:5001/termos" + tip2.termo)=tip2.termo
+//-     footer.w3-container.w3-teal Made by Guilherme Palumbo
+        
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Página Inicial
+            table.w3-table-all
+                tr
+                    th Classes
+                        td
+                            a(href='http://localhost:5001/classes/')
+                tr
+                    th Termos de índice
+                        td
+                            a(href='http://localhost:5001/termos/')
+        //- .w3-card-4
+        //-     header.w3-container.w3-teal.w3-margin-top
+        //-         h3 Classes:
+        //-     table.w3-table-all
+        //-         tr
+        //-             th Código 
+        //-             th Titulo
+        //-         each e in lista
+        //-             tr
+        //-               td= e.codigo
+        //-                 td
+        //-                     a(href='http://localhost:5001/classes/' + e.id)= e.titulo
+        //- .w3-card-4
+        //-     header.w3-container.w3-teal.w3-margin-top
+        //-         h3 Termos:
+        //-     table.w3-table-all
+        //-         tr
+        //-             th Codigo da Classe
+        //-             th Termo
+        //-         each p in lista2
+        //-             tr
+        //-                 td= p.codigoClasse
+        //-                 td= p.termo
+
+    footer.w3-container.w3-teal Made by Guilherme Palumbo
+            a(href='/')
+                button.w3-button.w3-green.w3-margin Voltar
+
+
